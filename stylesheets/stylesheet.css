@@ -8,8 +8,6 @@ body {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-/* General & 'Reset' Stuff */
-
 .container {
   width: 90%;
   max-width: 600px;
@@ -27,6 +25,19 @@ h1, h2, h3, h4, h5, h6 {
 
 li {
   line-height: 1.4 ;
+  float: left;
+}
+
+li a{
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
 
 /* Header, <header>
@@ -36,11 +47,12 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(33, 33, 33, 1);
   width: 100%;
   border-bottom: 1px dashed #b5e853;
   padding: 20px 0;
   margin: 0 0 40px 0;
+  position: fixed;
 }
 
 header h1 {
@@ -78,6 +90,7 @@ header h2 {
 */
 
 #main_content {
+	margin-top: 500px;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -129,18 +142,12 @@ dt {
   font-weight: bold;
 }
 
-ul li {
-  list-style: none;
-}
-
-ul li:before {
-  content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 13px;
-  color: #b5e853;
-  margin-left: -37px;
-  margin-right: 21px;
-  line-height: 16px;
+ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
 blockquote {
@@ -249,4 +256,25 @@ a {
 
 .cf {
   zoom:1;
+}
+
+
+#index {
+	height : 100vh;
+}
+
+#about {
+	height : 100vh;
+	padding-top: 300px;
+}
+
+#projects {
+	height : 100vh;
+	padding-top: 300px;
+
+}
+
+#contact {
+	height : 100vh;
+	padding-top: 300px;
 }
