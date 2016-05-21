@@ -10,8 +10,11 @@ body {
 
 .container {
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
+}
+.container * {
+  max-width: 600px;
 }
 
 section {
@@ -260,20 +263,21 @@ a {
 }
 
 #about {
-	height : 100vh;
 	padding-top: 300px;
 }
 
 #projects {
-	height : 100vh;
 	padding-top: 300px;
 
 }
 
 #contact {
-	height : 100vh;
-	padding-top: 300px;
+  border-top: 1px dashed #b5e853;
+	margin-top: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
 
 @media screen and (max-width: 600px){
     header ul li{float: none;}
