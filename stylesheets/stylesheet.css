@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 .container * {
-  max-width: 600px;
+  max-width: 1080px;
 }
 
 section {
